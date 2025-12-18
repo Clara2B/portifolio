@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Desenvolvedora Front End 2025 | Clara Costa</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/base.css"/>
+  <link rel="stylesheet" href="styles/footer.css"/>
+  <link rel="stylesheet" href="styles/header.css"/>
+  <link rel="stylesheet" href="styles/hero.css"/>
+  <link rel="stylesheet" href="styles/project.css"/>
+  <link rel="stylesheet" href="styles/sections.css"/>
+  <link rel="stylesheet" href="styles/skills.css"/>
+  <link rel="stylesheet" href="styles/variables.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -103,10 +110,24 @@
 
   <script src="javascript.js"></script>
   <script>
-  window.addEventListener("load", () => {
+      window.addEventListener("load", () => {
     document.body.classList.add("loaded");
   });
-</script>
 
+
+  // Animação do Hero
+  const hero = document.querySelector('.hero');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        hero.classList.add('show');
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(hero);
+  </script>
 </body>
 </html>

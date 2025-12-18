@@ -1,0 +1,20 @@
+:root {
+  --bg: #f9f3e5;
+  --text: #1e1e1e;
+  --accent: #f472a4;
+  --header-bg: #f3e6de;
+  --primary: #213877;
+  --card-bg: #ffffff;
+  --shadow-img: #f3aec7;
+  --shadow-img-hover: #f494b2;
+}
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f0f0f0;
+  --accent: #ed688e;
+  --header-bg: #0f0f0f;
+  --primary: #3358be;
+  --card-bg: #0f0f0f;
+  --shadow-img: #6c152980;
+  --shadow-img-hover: #9d0f3093;
+}

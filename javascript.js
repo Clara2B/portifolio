@@ -27,7 +27,4 @@ projects.forEach(p => {
   card.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p><a href="${p.link}" target="_blank">Ver mais</a>`;
   grid.appendChild(card);
 
-
 });
-
-
